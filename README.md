@@ -66,35 +66,35 @@ Create a stepDef file, use this Skeleton method, and implement the test per test
 Create a testRunner file and run the Cucumber test using it.<br>
 
 
-Test Scenario 2:[TestNG+Selenium]
-1.Create a testNG.xml file in the same Maven project
-2.Configure a test pizzahut001 inside testNG.xml file
-3.Create a new java file for TestNG test implementation
-4.Use Extend Reporting while each step is PASS/FAIL
-5.Use an Excel Sheet to read application URL [https://www.pizzahut.co.in/]
-6.TestNG test steps are given below:
-Use @BeforeClass/@BeforeSuite to launch https://www.pizzahut.co.in/
-A black color auto pop up screen will be displayed. Close it
-Then, set the user delivery location as Lulu Mall, Bangalore
-The user is now on the Deals page. Validate that the URL has text as ‘deals’
-Go to sides and add any item that is below 200
-Validate that the product is added under Basket but checkout button price item is still now showing
-Navigate to the Drinks page
-Add any two drinks so that total cart pricing is more than 200
-Click on the Checkout button. The user will be navigated to the checkout page
-Validate that the Online Payment radio button is selected by default
-Change the Payment option to Cash
-Validate that the I agree checkbox is checked by default
-Enter name, mobile, and email address
-Click on the Apply Gift Card link
-A pop up should appear. Click on the Voucher
-Give the Voucher code as 12345 and submit
-Validate if an error is coming that the number is incorrect
-Close the voucher pop up
-The user should again navigate to your Basket page.
-Use @AfterClass/@AfterSuite to quit the driver session
-Configure testNG.xml to run pom.xml
-All test data should be parameterized from testNG.xml
-Use page object model to capture page object
-Upload the project into Git
-Make sure the project is running using the Maven test command
+<h3>Test Scenario 2:[TestNG+Selenium]</h3>
+1.Create a testNG.xml file in the same Maven project<br>
+2.Configure a test pizzahut001 inside testNG.xml file<br>
+3.Create a new java file for TestNG test implementation<br>
+4.Use Extend Reporting while each step is PASS/FAIL<br>
+5.Use an Excel Sheet to read application URL [https://www.pizzahut.co.in/]<br>
+6.TestNG test steps are given below:<br>
+Use @BeforeClass/@BeforeSuite to launch https://www.pizzahut.co.in/<br>
+A black color auto pop up screen will be displayed. Close it<br>
+Then, set the user delivery location as Lulu Mall, Bangalore<br>
+The user is now on the Deals page. Validate that the URL has text as ‘deals’<br>
+Go to sides and add any item that is below 200<br>
+Validate that the product is added under Basket but checkout button price item is still now showing<br>
+Navigate to the Drinks page<br>
+Add any two drinks so that total cart pricing is more than 200<br>
+Click on the Checkout button. The user will be navigated to the checkout page<br>
+Validate that the Online Payment radio button is selected by default<br>
+Change the Payment option to Cash<br>
+Validate that the I agree checkbox is checked by default<br>
+Enter name, mobile, and email address<br>
+Click on the Apply Gift Card link<br>
+A pop up should appear. Click on the Voucher<br>
+Give the Voucher code as 12345 and submit<br>
+Validate if an error is coming that the number is incorrect<br>
+Close the voucher pop up<br>
+The user should again navigate to your Basket page.<br>
+Use @AfterClass/@AfterSuite to quit the driver session<br>
+Configure testNG.xml to run pom.xml<br>
+All test data should be parameterized from testNG.xml<br>
+Use page object model to capture page object<br>
+Upload the project into Git<br>
+Make sure the project is running using the Maven test command<br>
