@@ -30,15 +30,40 @@ Design a functionality to automate testing using Selenium and Cucumber or TestNG
   <li>Use Extend Reporting while each step is PASS/FAIL</li>
 </ol>
 
-@Smoke Scenario Outline: Validate Pizzahut pizza order flow Given User launch Pizzahut application with "<URL>" When User wait for auto location black pop up screen Then User close the pop up screen And User see pop up for delivery asking for enter location Then User type address as "<Location>" And User select first auto populate drop down option When User navigate to deails page Then User validate vegetarian radio button flag is off And User clicks on Pizzas menu bar option When User select add button of any pizza from Recommended Then User see that the pizza is getting added under Your Basket And User validate pizza price plus Tax is checkout price Then User validate checkout button contains Item count And User validate checkout button contains total price count Then User clicks on Drinks option And User select Pepsi option to add into the Basket Then User see 2 items are showing under checkout button And User see total price is now more than before Then User remove the Pizza item from Basket And see Price tag got removed from the checkout button And User see 1 item showing in checkout button Then User Clicks on Checkout button And User see minimum order required pop up is getting displayed
-Examples:
-|URL|Location| |https://www.pizzahut.co.in/|lulu mall bangalore|
-All Cucumber test data should be parameterized through Feature File scenario table.
-Use Page Factory/Page object model for page HTML element
-Close the driver session for the above feature file scenario using Cucumber hooks.
-Convert these feature file scenarios into test steps Skeleton.
-Create a stepDef file, use this Skeleton method, and implement the test per test automation flow.
-Create a testRunner file and run the Cucumber test using it.
+@Smoke <br>
+Scenario Outline: Validate Pizzahut pizza order flow <br>
+Given User launch Pizzahut application with "<URL>"<br> 
+When User wait for auto location black pop up screen<br> 
+Then User close the pop up screen<br> 
+And User see pop up for delivery asking for enter location<br> 
+Then User type address as "<Location>"<br> 
+And User select first auto populate drop down option<br> 
+When User navigate to deails page<br> 
+Then User validate vegetarian radio button flag is off<br> 
+And User clicks on Pizzas menu bar option<br> 
+When User select add button of any pizza from Recommended<br> 
+Then User see that the pizza is getting added under Your Basket<br>
+And User validate pizza price plus Tax is checkout price<br> 
+Then User validate checkout button contains Item count<br> 
+And User validate checkout button contains total price count<br> 
+Then User clicks on Drinks option<br> 
+And User select Pepsi option to add into the Basket<br> 
+Then User see 2 items are showing under checkout button<br> 
+And User see total price is now more than before<br> 
+Then User remove the Pizza item from Basket<br> 
+And see Price tag got removed from the checkout button<br> 
+And User see 1 item showing in checkout button<br> 
+Then User Clicks on Checkout button<br>
+And User see minimum order required pop up is getting displayed<br>
+Examples:<br>
+|URL|Location| |https://www.pizzahut.co.in/|lulu mall bangalore|<br>
+
+All Cucumber test data should be parameterized through Feature File scenario table.<br>
+Use Page Factory/Page object model for page HTML element.<br>
+Close the driver session for the above feature file scenario using Cucumber hooks.<br>
+Convert these feature file scenarios into test steps Skeleton.<br>
+Create a stepDef file, use this Skeleton method, and implement the test per test automation flow.<br>
+Create a testRunner file and run the Cucumber test using it.<br>
 
 
 Test Scenario 2:[TestNG+Selenium]
