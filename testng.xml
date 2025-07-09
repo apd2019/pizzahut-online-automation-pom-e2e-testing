@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Pizzahut Test Suite">
-  <test thread-count="5" name="pizzahut001">
-  <parameter name="excelPath" value="src/test/resources/TestData.xlsx"/>
-  <classes>
-  <class name="tests.PizzaHutOrderTest"/>
-  
-  </classes>
-  
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  <test name="PizzaHut Order Flow">
+    <parameter name="url" value="https://www.pizzahut.co.in/"/>
+    <parameter name="location" value="Lulu Mall, Bangalore"/>
+    <parameter name="name" value="Test User"/>
+    <parameter name="mobile" value="9876543210"/>
+    <parameter name="email" value="test@example.com"/>
+    <parameter name="voucher" value="12345"/>
+    <classes>
+      <class name="test.java.test.PizzahutTestNG"/>
+    </classes>
+  </test>
+</suite>

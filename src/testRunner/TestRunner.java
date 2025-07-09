@@ -10,11 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 		features = "src/test/pizzahut.feature",
-		glue= "stepDefinitions"
-//		tags= "@Smoke"
-//		plugin = {"pretty",
-//				
-//		}
+		glue= {"stepDefinitions"},
+		tags= "@Smoke",
+		plugin = {"pretty", "html:target/cucumber/cucumber-reports"	}
 		
 		)
 
