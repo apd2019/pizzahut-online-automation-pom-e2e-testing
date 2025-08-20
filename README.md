@@ -98,3 +98,59 @@ All test data should be parameterized from testNG.xml<br>
 Use page object model to capture page object<br>
 Upload the project into Git<br>
 Make sure the project is running using the Maven test command<br>
+
+<h2>Project Structure</h2>
+<h3>Visual (Mermaid)</h3>
+```mermaid
+graph TD
+  A["PizzahutAutomationWithCucumber-updated-POM-git-pushed/"]
+  A --> C["docs-submit/"]
+  C --> C1["Screenshots.docx"]
+  C --> C2["Source-code.docx"]
+  C --> C3["write-up.docx"]
+  A --> D["pom.xml"]
+  A --> E["README.md"]
+  A --> F["src/"]
+  F --> F1["main/"]
+  F1 --> F1a["java/"]
+  F1a --> F1a1["utils/"]
+  F1a1 --> F1a1a["ExtentReportManager.java"]
+  F --> F2["pizzahutPageObjects/"]
+  F2 --> F2a["PizzaHutPageObjects.java"]
+  F --> F3["stepDefinitions/"]
+  F3 --> F3a["StepDefinitions.java"]
+  F --> F4["test/"]
+  F4 --> F4a["java/"]
+  F4a --> F4a1["test/"]
+  F4 --> F4b["pizzahut.feature"]
+  F4 --> F4c["resources/"]
+  F --> F5["testRunner/"]
+  F5 --> F5a["TestRunner.java"]
+```
+
+<h3>Quick ASCII tree</h3>
+```text
+PizzahutAutomationWithCucumber-updated-POM-git-pushed/
+├─ docs-submit/
+│  ├─ Screenshots.docx
+│  ├─ Source-code.docx
+│  └─ write-up.docx
+├─ pom.xml
+├─ README.md
+└─ src/
+   ├─ main/
+   │  └─ java/
+   │     └─ utils/
+   │        └─ ExtentReportManager.java
+   ├─ pizzahutPageObjects/
+   │  └─ PizzaHutPageObjects.java
+   ├─ stepDefinitions/
+   │  └─ StepDefinitions.java
+   ├─ test/
+   │  ├─ java/
+   │  │  └─ test/
+   │  ├─ pizzahut.feature
+   │  └─ resources/
+   └─ testRunner/
+      └─ TestRunner.java
+```
