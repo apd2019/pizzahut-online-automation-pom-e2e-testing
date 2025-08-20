@@ -65,7 +65,6 @@ Convert these feature file scenarios into test steps Skeleton.<br>
 Create a stepDef file, use this Skeleton method, and implement the test per test automation flow.<br>
 Create a testRunner file and run the Cucumber test using it.<br>
 
-
 <h3>Test Scenario 2:[TestNG+Selenium]</h3>
 1.Create a testNG.xml file in the same Maven project<br>
 2.Configure a test pizzahut001 inside testNG.xml file<br>
