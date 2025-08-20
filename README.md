@@ -100,6 +100,7 @@ Make sure the project is running using the Maven test command<br>
 
 <h2>Project Structure</h2>
 <h3>Visual (Mermaid)</h3>
+
 ```mermaid
 graph TD
   A["PizzahutAutomationWithCucumber-updated-POM-git-pushed/"]
@@ -128,6 +129,7 @@ graph TD
 ```
 
 <h3>Quick ASCII tree</h3>
+
 ```text
 PizzahutAutomationWithCucumber-updated-POM-git-pushed/
 ├─ docs-submit/
