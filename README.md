@@ -155,3 +155,15 @@ PizzahutAutomationWithCucumber-updated-POM-git-pushed/
    └─ testRunner/
       └─ TestRunner.java
 ```
+
+<h3>POM.xml dependencies used</h3>
+```pom.xml
+1. Extent Report - extentreports-cucumber7-adapter [tech.grasshopper]
+2. Selenium Java: selenium-java [org.seleniumhq.selenium]
+3. TestNG [org.testng]
+4. Cucumber Junit: cucumber-junit [io.cucumber]
+5. Cucumber Java: cucumber-java [io.cucumber]
+6. WebDriverManager: webdrivermanager [io.github.bonigarcia]
+7. Apache POI: poi-ooxml [org.apache.poi]
+8. Extent Reports: extentreports [com.aventstack]
+```
